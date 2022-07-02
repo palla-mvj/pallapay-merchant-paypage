@@ -1,1 +1,20 @@
-<?php
+<form method="POST" action="https://www.pallapay.com/sci/form" target="_blank">
+    <input type="hidden" name="merchant" value="{YOURMERCHANTID}" required>
+        <input type="hidden" name="order" value="{YOURORDERID}"  required>
+        <input type="hidden" name="item_name" value="{ITEMNAME}"  required>
+        <input type="hidden" name="item_number" value="{ITEMNUMBER}"  required>
+        <input type="hidden" name="amount" value="{TOTALAMOUNT}"  required>
+        <input type="hidden" name="quantity" value="1"  required>
+        <input type="hidden" name="currency" value="{CURRENCYCODE}"  required>
+        <input type="hidden" name="first_name" value="{YOURCUSTOMERFIRSTNAME}"  required>
+        <input type="hidden" name="last_name" value="{YOURCUSTOMERLASTNAME}"  required>
+        <input type="hidden" name="email" value="{YOURCUSTOMEREMAILADDRESS}"  required>
+        <input type="hidden" name="phone" value="{YOURCUSTOMERPHONENUMBER}"  required>
+        <input type="hidden" name="address" value="{YOURCUSTOMERADDRESS}"  required>
+        <input type="hidden" name="city" value="{YOURCUSTOMERCITY}"  required>
+        <input type="hidden" name="state" value="{YOURCUSTOMERSTATE}"  required>
+        <input type="hidden" name="country" value="{YOURCUSTOMERCOUNTRY}"  required>
+        <input type="hidden" name="postalcode" value="{YOURCUSTOMERPOSATALCODE}"  required>
+        <input type="hidden" name="custom" value="{COMMENTS}">
+    <button type="submit">Pay now!</button>
+<form/>
