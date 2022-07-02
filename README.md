@@ -4,7 +4,7 @@ Demo Form Merchant Pay Page
 Please replace value between {} to real value<br />
 
 form input value details<br />
-merchant = You can get or new create merchant from Pallapay Backend from [a merchant page](https://www.pallapay.com/account/merchants) <br />
+merchant = You can get or new create merchant from Pallapay Backend from [merchant page](https://www.pallapay.com/account/merchants) <br />
 order = Your order id created by your's website.<br />
 item_name = Item name you want to put or your customer buy<br />
 item_number = Item number<br />
