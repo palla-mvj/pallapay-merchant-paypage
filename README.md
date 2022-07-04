@@ -1,21 +1,43 @@
 # pallapay-merchant-paypage
-Demo Form Merchant Pay Page
 
-Please replace value between {} to real value<br />
+## Create payment page
 
-form input value details<br />
-merchant = You can get or new create merchant from Pallapay Backend from [merchant page](https://www.pallapay.com/account/merchants) <br />
-order = Your order id created by your's website.<br />
-item_name = Item name you want to put or your customer buy<br />
-item_number = Item number<br />
-amount = Total amount of your order<br />
-quantity = 1 (minimum qty 1)<br />
-currency = "AED, USD" currency code etc which is pallapay accept<br />
-custom = We will give you in response same value which is you sent to us.<br />
-Fill all the details of your customer <br />
-first_name, last_name, email, phone, address, city, state, country, postalcode<br />
+Please replace values between `{}` with real value in `index.php` file.
+
+`merchant` = You can get or new create merchant from Pallapay Backend from [merchant page](https://www.pallapay.com/account/merchants)
+
+`order` = Your order id created by your website.
+
+`item_name` = Item name that user want to pay for
+
+`item_number` = Item number
+
+`amount` = Total amount of your order
+
+`quantity` = 1 (minimum qty 1)
+
+`currency` = `AED` or `USD` are supported at the moment. (Contact us for more)
+
+`custom` = Your custom value, you will get this value back in `ipn_notify.php` (ipn_notify_url) when the payment was paid.
+
+Customer details : 
+
+`first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `country`, `postalcode`
+
+Once we received your payment we will call your IPN callback url with method `POST`.
+You have to set `Status IPN url` input when you create your merchant.
+When the payment was done successfully user will be redirected to your `Success link`.
+If payment failed or canceled we will redirect user to your `Fail link`.
+
+> (You need to provide `Status IPN url`, `Success link` and `Fail link` in your panel when you create your merchant).
 
 
-once we will receive your payment we will notify to you Your IPN callback url with POST parameter. you have to set "Status IPN link" input box when you created merchant. <br />
-once we will receive your payment we will redirect on your "Success link". you have set the link when you created merchant<br />
-if payment failed or cancel we will redirect on your fail page. you have set the link when you created merchant.<br />
+## Ipn notify
+
+You can checkout the `ipn_notify.php` to see an example ipn_notify callback.
+
+You should write your own logics in that file.
+
+## Contact us
+
+Feel free to contact us if you had any question.
