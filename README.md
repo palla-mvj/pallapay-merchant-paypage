@@ -2,7 +2,7 @@
 
 ## Create payment page
 
-Please replace values between `{}` with real value in `index.php` file.
+Please replace values between `{}` with real value in `index.html` file.
 
 `merchant` = You can get or new create merchant from Pallapay Backend from [merchant page](https://www.pallapay.com/account/merchants)
 
