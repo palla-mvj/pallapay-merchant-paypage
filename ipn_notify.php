@@ -27,7 +27,7 @@ $hash_string = $total.':'.$merchant_password.':'.$date.':'.$id_transfer;
 		
 $user_hash = strtoupper(md5($hash_string));
 
-if ($hash_string == $user_hash) {
+if ($hash == $user_hash) {
 	echo "Confirmed!";
 } else {
 	echo "Failed!";
